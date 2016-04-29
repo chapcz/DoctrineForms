@@ -112,6 +112,9 @@ class EntityFormMapper extends Nette\Object
 	 */
 	public function save($entity, $formElement)
 	{
+		if (!is_object($entity)){
+			return; // workaround to use entity form asi simple form
+		}
 		$meta = $this->getMetadata($entity);
 
 		foreach (self::iterate($formElement) as $component) {
