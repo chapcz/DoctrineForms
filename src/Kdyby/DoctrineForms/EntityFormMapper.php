@@ -23,8 +23,9 @@ use Symfony\Component\PropertyAccess\PropertyAccessor;
 /**
  * @author Filip Procházka <filip@prochazka.su>
  */
-class EntityFormMapper extends Nette\Object
+class EntityFormMapper
 {
+    use Nette\SmartObject;
 
 	/**
 	 * @var EntityManager

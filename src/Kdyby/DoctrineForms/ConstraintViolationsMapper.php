@@ -25,8 +25,10 @@ use Symfony\Component\Validator\Validator\ValidatorInterface;
 /**
  * @author Filip Procházka <filip@prochazka.su>
  */
-class ConstraintViolationsMapper extends Nette\Object
+class ConstraintViolationsMapper
 {
+
+    use Nette\SmartObject;
 
 	/**
 	 * @var \Symfony\Component\Validator\ValidatorInterface

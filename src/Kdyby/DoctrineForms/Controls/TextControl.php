@@ -27,8 +27,10 @@ use Symfony\Component\PropertyAccess\PropertyAccessor;
 /**
  * @author Filip Procházka <filip@prochazka.su>
  */
-class TextControl extends Nette\Object implements IComponentMapper
+class TextControl implements IComponentMapper
 {
+
+    use Nette\SmartObject;
 
 	/**
 	 * @var EntityFormMapper

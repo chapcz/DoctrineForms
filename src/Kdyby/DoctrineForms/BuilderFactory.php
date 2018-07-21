@@ -19,9 +19,10 @@ use Nette;
 /**
  * @author Filip Procházka <filip@prochazka.su>
  */
-class BuilderFactory extends Nette\Object
+class BuilderFactory
 {
 
+    use Nette\SmartObject;
 	/**
 	 * @var \Doctrine\ORM\EntityManager
 	 */
